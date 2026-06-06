@@ -1,0 +1,262 @@
+/* ===== Estilos generales ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* ===== Encabezado ===== */
+header {
+  background-color: #111;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid gold;
+}
+
+.logo {
+  height: 60px;
+}
+
+/* ===== Navegación ===== */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #222;
+}
+
+/* ===== Secciones generales ===== */
+section {
+  padding: 40px;
+}
+
+section h2 {
+  color: gold;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+/* ===== Banner Inicio ===== */
+.banner {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(212,175,55,0.4)),
+              url("banner.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.banner h2 {
+  font-size: 2.5em;
+  color: gold;
+}
+
+.banner p {
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+.banner button {
+  background-color: gold;
+  color: #000;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.banner button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ===== Beneficios Inicio ===== */
+.beneficios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.beneficio {
+  background-color: #111;
+  border: 2px solid gold;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+
+/* ===== Subtítulos de catálogo ===== */
+.subtitulo {
+  color: gold;
+  text-align: left;
+  margin: 20px 0;
+  font-size: 1.5em;
+  border-left: 4px solid gold;
+  padding-left: 10px;
+}
+
+/* ===== Catálogo ===== */
+.catalogo {
+  background-color: #000;
+  padding: 40px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.producto {
+  border: 2px solid gold;
+  padding: 15px;
+  background-color: #111;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  height: 300px; /* 🔥 todas las cajas del mismo tamaño */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.producto img {
+  max-width: 100%;
+  max-height: 180px; /* 🔥 controla altura de imagen */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  color: gold;
+  font-size: 1.1em;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
+
+/* ===== Sección Nosotros ===== */
+.nosotros {
+  background-color: #111;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+  text-align: center;
+  padding: 40px;
+}
+
+.nosotros h3 {
+  color: gold;
+  margin-top: 20px;
+}
+
+.nosotros p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* ===== Contacto ===== */
+.contacto {
+  background-color: #000;
+  padding: 40px;
+  border-top: 2px solid gold;
+}
+
+.contacto .mensaje {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+
+.contacto-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #111;
+  border: 2px solid gold;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card img.icono {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: gold;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid gold;
+}
+
+footer p {
+  margin: 0;
+  color: gold;
+}
+/* Botón "Compra lo mejor" */
+.btn-catalogo {
+  display: inline-block;
+  background-color: gold;
+  color: #000;
+  padding: 12px 25px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-catalogo:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
